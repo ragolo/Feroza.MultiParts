@@ -3,8 +3,82 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Domain", "1. Domain", "{BA083CCE-DCFE-48E0-B457-59D40D695FE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Services", "2. Services", "{11694D18-00EC-46A3-8986-D00845E4C2D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Infrastructure", "3. Infrastructure", "{38F39B64-F1DF-4C0E-8741-717669D9D9BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Web", "4. Web", "{F956A9E1-0DA0-40DD-B96F-8DAEF27DE5DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Test", "5. Test", "{493CF966-BF8D-4C32-A314-36AA43D82925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feroza.MultiParts.Domain.Entities", "1. Domain\Feroza.MultiParts.Domain.Entities\Feroza.MultiParts.Domain.Entities.csproj", "{50B1B10C-A7F4-41B2-9E73-289477BEAF15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feroza.MultiParts.Domain.Interfaces", "1. Domain\Feroza.MultiParts.Domain.Interfaces\Feroza.MultiParts.Domain.Interfaces.csproj", "{1D4777F3-2A50-4D89-B774-6974758AB7BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feroza.MultiParts.Infrastructure.Data", "3. Infrastructure\Feroza.MultiParts.Infrastructure.Data\Feroza.MultiParts.Infrastructure.Data.csproj", "{06679822-8E16-493D-90B7-704E84F78827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feroza.MultiParts.Infrastructure.DependecyResolution", "3. Infrastructure\Feroza.MultiParts.Infrastructure.DependecyResolution\Feroza.MultiParts.Infrastructure.DependecyResolution.csproj", "{327DC002-FCC0-4EE7-B006-AEC298C176F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feroza.MultiParts.Infrastructure.Interfaces", "3. Infrastructure\Feroza.MultiParts.Infrastructure.Interfaces\Feroza.MultiParts.Infrastructure.Interfaces.csproj", "{D3A1126D-F276-43E6-95C4-D3A48060749F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feroza.MultiParts.Services.Interfaces", "2. Services\Feroza.MultiParts.Services.Interfaces\Feroza.MultiParts.Services.Interfaces.csproj", "{3BA67368-0554-47F6-9345-2D835DF2EEDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feroza.MultiParts.Tests.Core", "5. Test\Feroza.MultiParts.Tests.Core\Feroza.MultiParts.Tests.Core.csproj", "{7BBAD35C-742F-45C2-BD2F-2AC1DFB16518}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feroza.MultiParts.Infrastructure.Logging", "3. Infrastructure\Feroza.MultiParts.Infrastructure.Logging\Feroza.MultiParts.Infrastructure.Logging.csproj", "{75F72E63-DA89-47E7-89CD-6A31AF7E6CF5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50B1B10C-A7F4-41B2-9E73-289477BEAF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B1B10C-A7F4-41B2-9E73-289477BEAF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B1B10C-A7F4-41B2-9E73-289477BEAF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B1B10C-A7F4-41B2-9E73-289477BEAF15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4777F3-2A50-4D89-B774-6974758AB7BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4777F3-2A50-4D89-B774-6974758AB7BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4777F3-2A50-4D89-B774-6974758AB7BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4777F3-2A50-4D89-B774-6974758AB7BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06679822-8E16-493D-90B7-704E84F78827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06679822-8E16-493D-90B7-704E84F78827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06679822-8E16-493D-90B7-704E84F78827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06679822-8E16-493D-90B7-704E84F78827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{327DC002-FCC0-4EE7-B006-AEC298C176F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{327DC002-FCC0-4EE7-B006-AEC298C176F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{327DC002-FCC0-4EE7-B006-AEC298C176F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{327DC002-FCC0-4EE7-B006-AEC298C176F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A1126D-F276-43E6-95C4-D3A48060749F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A1126D-F276-43E6-95C4-D3A48060749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A1126D-F276-43E6-95C4-D3A48060749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A1126D-F276-43E6-95C4-D3A48060749F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA67368-0554-47F6-9345-2D835DF2EEDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA67368-0554-47F6-9345-2D835DF2EEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA67368-0554-47F6-9345-2D835DF2EEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA67368-0554-47F6-9345-2D835DF2EEDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBAD35C-742F-45C2-BD2F-2AC1DFB16518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBAD35C-742F-45C2-BD2F-2AC1DFB16518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBAD35C-742F-45C2-BD2F-2AC1DFB16518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBAD35C-742F-45C2-BD2F-2AC1DFB16518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F72E63-DA89-47E7-89CD-6A31AF7E6CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F72E63-DA89-47E7-89CD-6A31AF7E6CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F72E63-DA89-47E7-89CD-6A31AF7E6CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F72E63-DA89-47E7-89CD-6A31AF7E6CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50B1B10C-A7F4-41B2-9E73-289477BEAF15} = {BA083CCE-DCFE-48E0-B457-59D40D695FE8}
+		{1D4777F3-2A50-4D89-B774-6974758AB7BD} = {BA083CCE-DCFE-48E0-B457-59D40D695FE8}
+		{06679822-8E16-493D-90B7-704E84F78827} = {38F39B64-F1DF-4C0E-8741-717669D9D9BA}
+		{327DC002-FCC0-4EE7-B006-AEC298C176F6} = {38F39B64-F1DF-4C0E-8741-717669D9D9BA}
+		{D3A1126D-F276-43E6-95C4-D3A48060749F} = {38F39B64-F1DF-4C0E-8741-717669D9D9BA}
+		{3BA67368-0554-47F6-9345-2D835DF2EEDC} = {11694D18-00EC-46A3-8986-D00845E4C2D0}
+		{7BBAD35C-742F-45C2-BD2F-2AC1DFB16518} = {493CF966-BF8D-4C32-A314-36AA43D82925}
+		{75F72E63-DA89-47E7-89CD-6A31AF7E6CF5} = {38F39B64-F1DF-4C0E-8741-717669D9D9BA}
 	EndGlobalSection
 EndGlobal
