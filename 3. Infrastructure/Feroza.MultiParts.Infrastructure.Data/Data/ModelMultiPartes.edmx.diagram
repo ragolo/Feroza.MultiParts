@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dc724f87d8bc40a3ae4909cc97cadcc3" Name="Diagram1">
+        <EntityTypeShape EntityType="MultiPartesModel.Aplicaciones" Width="1.5" PointX="9.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.CatalogoDetalles" Width="1.5" PointX="12" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.Catalogos" Width="1.5" PointX="9.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.EstadoMaestras" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.Fabricantes" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.Marcas" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.Pais" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.Referencias" Width="1.5" PointX="7.5" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.Sistemas" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.SubSistemas" Width="1.5" PointX="5.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.Vehiculos" Width="1.5" PointX="7.5" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.VehiculoSistemas" Width="1.5" PointX="5.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiPartesModel.VehiculoSubSistemas" Width="1.5" PointX="7.5" PointY="13" IsExpanded="true" />
+        <AssociationConnector Association="MultiPartesModel.FK_Aplicaciones_CodigoOem_Referencias_CodigoOem" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Aplicaciones_IdVehiculos_Vehiculos_IdVehiculos" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_CatalogoDetalles_IdCatalogos_Catalogos_IdCatalogos" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Catalogos_IdSistemas_Sistemas_IdSistemas" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Catalogos_IdSubSistemas_SubSistemas_IdSubSistemas" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Catalogos_IdVehiculos_Vehiculos_IdVehiculos" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Fabricantes_IdEstadoMaestras_EstadoMaestras_IdEstadoMaestras" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Marcas_IdEstadoMaestras_EstadoMaestras_IdEstadoMaestras" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Pais_IdEstadoMaestras_EstadoMaestras_IdEstadoMaestras" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Sistemas_IdEstadoMaestras_EstadoMaestras_IdEstadoMaestras" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_SubSistemas_IdEstadoMaestras_EstadoMaestras_IdEstadoMaestras" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Fabricantes_IdPais_Pais_IdPais" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Vehiculos_IdFabricantes_Fabricantes_IdFabricantes" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_Vehiculos_IdMarca_Marcas_IdMarca" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_SubSistemas_IdSistemas_Sistema_IdSistemas" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_VehiculoSubSistemas_IdSubSistemas_SubSistemas_IdSubSistemas" ManuallyRouted="false" />
+        <AssociationConnector Association="MultiPartesModel.FK_VehiculoSubSistemas_IdVehiculoSistemas_VehiculoSistemas_IdVehiculoSistemas" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
